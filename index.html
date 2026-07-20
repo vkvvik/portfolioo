@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Демонстрационный сайт-визитка мастера красоты: ресницы, брови, перманентный макияж и обучение.">
+  <title>Beauty Atelier | Мастер красоты</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="brand" href="#hero" aria-label="Beauty Atelier">
+      <span class="brand-mark">BA</span>
+      <span>Beauty Atelier</span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" data-menu-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="main-nav" data-nav>
+      <a href="#about">О мастере</a>
+      <a href="#services">Услуги</a>
+      <a href="#results">Результат</a>
+      <a href="#course">Обучение</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+      <a class="nav-cta" href="#booking">Записаться</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-copy reveal">
+        <div class="hero-marquee" aria-label="Ресницы, брови, перманентный макияж">
+          <div class="hero-marquee-track">
+            <span>Ресницы • Брови • Перманентный макияж</span>
+            <span>Ресницы • Брови • Перманентный макияж</span>
+            <span>Ресницы • Брови • Перманентный макияж</span>
+            <span>Ресницы • Брови • Перманентный макияж</span>
+            <span>Ресницы • Брови • Перманентный макияж</span>
+            <span>Ресницы • Брови • Перманентный макияж</span>
+          </div>
+        </div>
+        <h1>Красота, которая подчёркивает вас</h1>
+        <p class="hero-text">Деликатный образ, аккуратная форма и результат, который выглядит естественно каждый день.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#booking">Записаться</a>
+          <a class="button button-ghost" href="#results">Результат</a>
+        </div>
+        <div class="hero-stats" aria-label="Показатели мастера">
+          <div><strong>7 лет</strong><span>опыта</span></div>
+          <div><strong>1000+</strong><span>клиентов</span></div>
+          <div><strong>обучение</strong><span>мастеров</span></div>
+        </div>
+      </div>
+
+      <figure class="hero-photo image-placeholder reveal" style="--label:'Фото мастера /assets/hero.jpg'">
+        <img src="assets/hero.jpg" alt="Портрет мастера красоты" data-fallback>
+      </figure>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">О мастере</p>
+        <h2>Мягкий подход и точная работа с деталями</h2>
+      </div>
+      <div class="about-layout">
+        <figure class="image-frame about-frame image-placeholder reveal" style="--label:'Фото /assets/master.jpg'">
+          <img src="assets/master.jpg" alt="Мастер за работой" data-fallback>
+        </figure>
+        <div class="about-content reveal">
+          <p>Короткий демонстрационный текст о мастере: консультация перед процедурой, подбор формы под черты лица и спокойная атмосфера без спешки.</p>
+          <div class="benefits">
+            <div class="benefit">
+              <span>01</span>
+              <p>Форма, изгиб и оттенок подбираются индивидуально.</p>
+            </div>
+            <div class="benefit">
+              <span>02</span>
+              <p>Материалы и техника рассчитаны на аккуратный стойкий результат.</p>
+            </div>
+            <div class="benefit">
+              <span>03</span>
+              <p>После процедуры остаются понятные рекомендации по уходу.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Услуги</p>
+        <h2>Процедуры для выразительного, но естественного образа</h2>
+      </div>
+
+      <div class="service-list reveal" role="list">
+        <article class="service-card">
+          <div>
+            <span>01</span>
+            <h3>Наращивание ресниц</h3>
+            <p>Подбор эффекта, изгиба и длины под форму глаз. От 0000 тг</p>
+          </div>
+          <figure class="service-thumb image-placeholder" style="--label:'service-lashes.jpg'">
+            <img src="assets/service-lashes.jpg" alt="Наращивание ресниц" data-fallback>
+          </figure>
+        </article>
+        <article class="service-card">
+          <div>
+            <span>02</span>
+            <h3>Ламинирование ресниц</h3>
+            <p>Натуральный изгиб, ухоженный вид и мягкая выразительность. От 0000 тг</p>
+          </div>
+          <figure class="service-thumb image-placeholder" style="--label:'service-lamination.jpg'">
+            <img src="assets/service-lamination.jpg" alt="Ламинирование ресниц" data-fallback>
+          </figure>
+        </article>
+        <article class="service-card">
+          <div>
+            <span>03</span>
+            <h3>Архитектура бровей</h3>
+            <p>Коррекция формы, окрашивание и чистая линия без перегруза. От 0000 тг</p>
+          </div>
+          <figure class="service-thumb image-placeholder" style="--label:'service-brows.jpg'">
+            <img src="assets/service-brows.jpg" alt="Архитектура бровей" data-fallback>
+          </figure>
+        </article>
+        <article class="service-card">
+          <div>
+            <span>04</span>
+            <h3>Перманент бровей</h3>
+            <p>Деликатная растушёвка для мягкой формы на каждый день. От 0000 тг</p>
+          </div>
+          <figure class="service-thumb image-placeholder" style="--label:'service-pm-brows.jpg'">
+            <img src="assets/service-pm-brows.jpg" alt="Перманентный макияж бровей" data-fallback>
+          </figure>
+        </article>
+        <article class="service-card">
+          <div>
+            <span>05</span>
+            <h3>Перманент губ</h3>
+            <p>Свежий оттенок, ровный контур и акварельный эффект. От 0000 тг</p>
+          </div>
+          <figure class="service-thumb image-placeholder" style="--label:'service-lips.jpg'">
+            <img src="assets/service-lips.jpg" alt="Перманентный макияж губ" data-fallback>
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <section class="results section" id="results">
+      <div class="results-head reveal">
+        <div>
+          <p class="eyebrow">Результат</p>
+          <h2>Посмотрите, как меняется образ</h2>
+          <p>Три демонстрационных сравнения: ресницы, брови и перманент губ. Позже сюда можно поставить реальные фото до и после.</p>
+        </div>
+      </div>
+
+      <div class="result-panels reveal">
+        <article class="result-panel is-active" data-result-panel>
+          <div class="compare" data-compare>
+            <div class="compare-layer compare-before image-placeholder" style="--label:'Фото до /assets/before-1.jpg'">
+              <img src="assets/before-1.jpg" alt="Ресницы до процедуры" data-fallback>
+              <span class="compare-badge compare-badge-left">до</span>
+            </div>
+            <div class="compare-layer compare-after image-placeholder" style="--label:'Фото после /assets/after-1.jpg'">
+              <img src="assets/after-1.jpg" alt="Ресницы после процедуры" data-fallback>
+              <span class="compare-badge compare-badge-right">после</span>
+            </div>
+            <input class="compare-range" type="range" min="0" max="100" value="52" aria-label="Сравнить ресницы до и после" data-compare-range>
+            <span class="compare-handle" aria-hidden="true"></span>
+          </div>
+        </article>
+
+        <article class="result-panel" data-result-panel>
+          <div class="compare" data-compare>
+            <div class="compare-layer compare-before image-placeholder" style="--label:'Фото до /assets/before-2.jpg'">
+              <img src="assets/before-2.jpg" alt="Брови до процедуры" data-fallback>
+              <span class="compare-badge compare-badge-left">до</span>
+            </div>
+            <div class="compare-layer compare-after image-placeholder" style="--label:'Фото после /assets/after-2.jpg'">
+              <img src="assets/after-2.jpg" alt="Брови после процедуры" data-fallback>
+              <span class="compare-badge compare-badge-right">после</span>
+            </div>
+            <input class="compare-range" type="range" min="0" max="100" value="52" aria-label="Сравнить брови до и после" data-compare-range>
+            <span class="compare-handle" aria-hidden="true"></span>
+          </div>
+        </article>
+
+        <article class="result-panel" data-result-panel>
+          <div class="compare" data-compare>
+            <div class="compare-layer compare-before image-placeholder" style="--label:'Фото до /assets/before-3.jpg'">
+              <img src="assets/before-3.jpg" alt="Губы до процедуры" data-fallback>
+              <span class="compare-badge compare-badge-left">до</span>
+            </div>
+            <div class="compare-layer compare-after image-placeholder" style="--label:'Фото после /assets/after-3.jpg'">
+              <img src="assets/after-3.jpg" alt="Губы после процедуры" data-fallback>
+              <span class="compare-badge compare-badge-right">после</span>
+            </div>
+            <input class="compare-range" type="range" min="0" max="100" value="52" aria-label="Сравнить губы до и после" data-compare-range>
+            <span class="compare-handle" aria-hidden="true"></span>
+          </div>
+        </article>
+        <div class="result-tabs" aria-label="Выбрать сравнение">
+          <button class="is-active" type="button" data-result-tab="0">1</button>
+          <button type="button" data-result-tab="1">2</button>
+          <button type="button" data-result-tab="2">3</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="course" id="course">
+      <div class="course-content reveal">
+        <p class="eyebrow">Обучение</p>
+        <h2>Обучение профессии с нуля</h2>
+        <p>Базовый курс для начинающих мастеров: теория, практика на моделях, постановка руки и поддержка после обучения.</p>
+        <div class="course-grid">
+          <span>4-6 недель</span>
+          <span>сертификат</span>
+          <span>практика</span>
+          <span>поддержка</span>
+        </div>
+        <ul>
+          <li>безопасность и санитария;</li>
+          <li>работа с материалами;</li>
+          <li>разбор форм и эффектов;</li>
+          <li>первые шаги в профессии.</li>
+        </ul>
+        <a class="button button-light" href="#booking">Узнать о курсе</a>
+      </div>
+    </section>
+
+    <section class="reviews section" id="reviews">
+      <div class="reviews-head reveal">
+        <div>
+          <p class="eyebrow">Отзывы</p>
+          <h2>Тёплые впечатления клиенток</h2>
+        </div>
+        <div class="review-controls">
+          <button type="button" aria-label="Предыдущий отзыв" data-review-prev>‹</button>
+          <button type="button" aria-label="Следующий отзыв" data-review-next>›</button>
+        </div>
+      </div>
+      <div class="review-orbit reveal" data-reviews>
+        <article class="review-card" data-review-card>
+          <div class="review-top">
+            <div class="review-avatar image-placeholder" style="--label:'client-1.jpg'">
+              <img src="assets/client-1.jpg" alt="Клиентка Анна" data-fallback>
+            </div>
+            <div>
+              <p class="stars">★★★★★</p>
+              <h3>Анна</h3>
+              <span>Архитектура бровей</span>
+            </div>
+          </div>
+          <p>Форму подобрали очень спокойно и внимательно. Получилось естественно, аккуратно и без ощущения “чужих” бровей.</p>
+        </article>
+        <article class="review-card" data-review-card>
+          <div class="review-top">
+            <div class="review-avatar image-placeholder" style="--label:'client-2.jpg'">
+              <img src="assets/client-2.jpg" alt="Клиентка Мария" data-fallback>
+            </div>
+            <div>
+              <p class="stars">★★★★★</p>
+              <h3>Мария</h3>
+              <span>Наращивание ресниц</span>
+            </div>
+          </div>
+          <p>Очень комфортная процедура. Ресницы выглядят мягко, не перегружают лицо и красиво держат форму.</p>
+        </article>
+        <article class="review-card" data-review-card>
+          <div class="review-top">
+            <div class="review-avatar image-placeholder" style="--label:'client-3.jpg'">
+              <img src="assets/client-3.jpg" alt="Клиентка Виктория" data-fallback>
+            </div>
+            <div>
+              <p class="stars">★★★★★</p>
+              <h3>Виктория</h3>
+              <span>Перманент губ</span>
+            </div>
+          </div>
+          <p>Оттенок после заживления нежный, контур ровный. Результат выглядит свежо, но очень деликатно.</p>
+        </article>
+      </div>
+      <div class="review-dots" data-review-dots aria-label="Текущий отзыв"></div>
+    </section>
+
+    <section class="booking" id="booking">
+      <div class="booking-copy reveal">
+        <p class="eyebrow">Запись</p>
+        <h2>Давайте подберём образ, который подойдёт именно вам</h2>
+        <p>Напишите в удобный мессенджер, и мастер подскажет свободное время и подходящую процедуру.</p>
+        <div class="booking-actions">
+          <a class="button button-primary" href="#">Записаться в WhatsApp</a>
+          <a class="button button-ghost" href="#">Instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts section" id="contacts">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Контакты</p>
+        <h2>Запись и адрес</h2>
+      </div>
+      <div class="contacts-layout">
+        <div class="contact-list reveal">
+          <p><span>WhatsApp</span><a href="#">+7 000 000 00 00</a></p>
+          <p><span>Instagram</span><a href="#">@beauty.atelier</a></p>
+          <p><span>Город</span>Ваш город</p>
+          <p><span>График</span>Пн-Сб, 10:00-20:00</p>
+          <p><span>Адрес</span>Улица Примерная, 10</p>
+        </div>
+        <div class="map-placeholder reveal">
+          <span>Карта-заглушка</span>
+          <small>сюда можно вставить карту или ссылку на навигатор</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Beauty Atelier. Демонстрационный макет.</p>
+    <div>
+      <a href="#">WhatsApp</a>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <div class="modal" data-modal aria-hidden="true">
+    <button class="modal-close" type="button" aria-label="Закрыть фото" data-modal-close>×</button>
+    <figure class="modal-content image-placeholder" style="--label:'Просмотр фотографии'">
+      <img src="" alt="Увеличенная работа" data-modal-img>
+      <figcaption data-modal-caption></figcaption>
+    </figure>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
